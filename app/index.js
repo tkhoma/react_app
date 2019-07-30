@@ -1,14 +1,10 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
+import App from './App'
+import { BrowserRouter as Router } from 'react-router-dom'
 
-class HelloWorld extends Component {
-    render() {
-        return (
-            <div>
-                Hello, React!
-            </div>
-        )
-    }
-}
-
-ReactDOM.render(<HelloWorld />, document.getElementById('root'))
+ReactDOM.render(
+    <Router>
+        <App />
+    </Router>,
+    document.getElementById('root'))

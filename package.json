@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode development",
-    "start": "webpack-dev-server --open --mode development --host 0.0.0.0 --port 3000"
+    "start": "webpack-dev-server --open --mode development --host 0.0.0.0 --port 3000 --hot --inline"
   },
   "keywords": [],
   "author": "",
@@ -15,8 +15,13 @@
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.6",
+    "css-loader": "^3.1.0",
+    "file-loader": "^4.1.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-icons": "^3.7.0",
+    "react-router-dom": "^5.0.1",
+    "style-loader": "^0.23.1",
     "webpack": "^4.38.0"
   },
   "devDependencies": {
